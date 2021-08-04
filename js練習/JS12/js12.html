@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS12練習</title>
+  <script src="js/js12.js"></script>
+</head>
+<style>
+  .content {
+    height: 30px;
+    width: 500px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: burlywood;
+    padding: 10px 0px;
+  }
+  .body {
+    width: 500px;
+    margin: 0px auto;
+  }
+  table {
+    width: 500px;
+    text-align: center;
+    padding: 5px;
+  }
+  .save {
+    background-color:peru;
+    color: white;
+    border: 0px;
+  }
+  .edit {
+    background-color: coral;
+    color: white;
+    border-radius: 15px;
+    border: none;
+  }
+  .del {
+    background-color: crimson;
+    color: white;
+    border-radius: 15px;
+    border: none;
+  }
+  #check {
+    background-color:mediumpurple;
+    color: white;
+    border-radius: 15px;
+    border: none;
+  }
+  .cancel {
+    background-color:lightskyblue;
+    color: white;
+    border-radius: 15px;
+    border: none;
+  }
+  #searchUser {
+    color: blueviolet;
+    width: 500px;
+    text-align: center;
+  }
+</style>
+<body>
+  
+  <div class="body">
+    <h1>8.	製作留言板</h1>
+    <h3>請製作一個有查詢、新增、修改、刪除的簡易留言板，內容請使用陣列JSON進行存儲。</h3>
+    <div class="content">
+      <input type="text" placeholder="Username" id="Username">
+      <input type="text" placeholder="password" id="password">
+      <input type="button" class="save" value="Save" onclick="saveuser()">
+    </div>
+    <hr>
+    <table id = "msgbox">
+      <tr>
+        <th class="tdId">id</th>
+        <th class="tdName">Username</th>
+        <th class="tdPassword">password</th>
+        <th class="tdAction">action</th>
+      </tr>
+    </table>
+    <br><br><br><hr>
+
+    <div class="content">
+      <input type="text" placeholder="SearchId" id="searchId">
+      <input type="button" class="save" value="search" onclick="search()">
+    </div>
+    <p id ="searchUser"></p>
+  </div>
+</body>
+</html>

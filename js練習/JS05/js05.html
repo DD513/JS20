@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS05練習</title>
+  <script src="js/js05.js"></script>
+</head>
+<body>
+  <h1>1.	陣列</h1>
+  <h3>輸入一個陣列，並執行以下動作：</h3>
+  <input type="text" placeholder="例：2,3,5,4,1" id= "array">
+  <input type="button" onclick="count()" value="計算">
+  <p>1.	輸出陣列的最大、最小元素</p>
+  <p>陣列最大的元素為：<p id = "max"></p></p>
+  <p>陣列最小的元素為：<p id = "min"></p></p>
+  <p>2.	陣列排序</p>
+  <p id="sort"></p>
+  <p>3.	查詢指定陣列元素</p>
+  <input type="text" placeholder="例：3" id= "index">
+  <input type="button" onclick="find()" value="尋找">
+  <p id= "find"></p>
+  <p>4.	陣列反轉</p>
+  <p id="reverse"></p>
+  <p>5.	新增元素到最後、刪除最後元素</p>
+  <input type="text" placeholder="例：3" id= "addindex">
+  <input type="button" onclick="add()" value="新增">
+  <p id= "addArray"></p>
+  <input type="button" onclick="del()" value="刪除最後元素">
+  <p id= "delArray"></p>
+  <p>6.	移除某個元素</p>
+  <input type="text" placeholder="例：3" id= "removeindex">
+  <input type="button" onclick="remove()" value="移除">
+  <p id= "removeArray"></p>
+
+  
+</body>
+</html>

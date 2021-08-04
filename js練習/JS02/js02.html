@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS02練習</title>
+  <script src="js/js02.js"></script>
+</head>
+<body>
+  <h1>2.	身分證檢驗</h1>
+  <h4>我國的身分證字號有底下這樣的規則，因此對於任意輸入的身分證字號可以有一些基本的判斷原則，請您來判斷一個身分證字號是否是正常的號碼(不代表確有此號、此人)。</h4>
+  <p>請輸入身分證字號：例： T112663836</p>
+  <div class="where">
+    <h5>(1) 英文代號以下表轉換成數字</h5>
+    <p>A=10 台北市 J=18 新竹縣 S=26 高雄縣
+        B=11 台中市 K=19 苗栗縣 T=27 屏東縣
+        C=12 基隆市 L=20 台中縣 U=28 花蓮縣
+        D=13 台南市 M=21 南投縣 V=29 台東縣
+        E=14 高雄市 N=22 彰化縣 W=32 金門縣
+        F=15 台北縣 O=35 新竹市 X=30 澎湖縣
+        G=16 宜蘭縣 P=23 雲林縣 Y=31 陽明山
+        H=17 桃園縣 Q=24 嘉義縣 Z=33 連江縣
+        I=34 嘉義市 R=25 台南縣
+    </p>
+</div>
+  <input type="text" placeholder="例： T112663836" id="ID">
+  <input type="button" onclick="verify()" value="確認"></button>
+  <p id="sum"></p>
+  <p>結果：<p id="result"></p></p>
+</body>
+</html>

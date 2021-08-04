@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS13練習</title>
+  <script src="js/js13.js"></script>
+</head>
+<style>
+  #msgbox {
+    text-align: center;
+    color: coral;
+    font-size: 50px;
+  }
+  body {
+    width: 500px;
+    margin: 0px auto;
+  }
+</style>
+<body>
+  <h1>9.	鍵盤事件I</h1>
+  <h3>當按下任何按鍵時，使用msgbox顯示按了甚麼按鈕。</h3>
+  <p id ="msgbox"></p>
+  <script>
+    window.addEventListener('keydown',(e)=>document.getElementById("msgbox").innerHTML = e.key)
+  </script>
+</body>
+</html>

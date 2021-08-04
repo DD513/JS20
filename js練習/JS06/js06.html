@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS06練習</title>
+  <script src="js/js06.js"></script>
+</head>
+<body>
+  <h1>2.	摩斯電碼</h1>
+  <p>摩斯電碼是一種在電報通訊的時代傳送文字訊息的方式，透過不同的排列順序來表達不同的英文字母、數字和標點符號。是由美國人薩繆爾·摩斯在1836 年發明。有兩種「符號」用來表示字元：點（.）(ASC 碼0X2E)和劃（-）(ASC 碼0X2D)，或叫「滴」（Dit）和「答」（Dah）。</p>
+  <p>英文字母對應的摩斯電碼如下：</p>
+  <p>A .- B -... C -.-. D -..
+    E . F ..-. G --. H ....
+    I .. J .--- K -.- L .-..
+    M -- N -. O --- P .--.
+    Q --.- R .-. S ... T -
+    U ..- V ...- W .-- X -..-
+    Y -.-- Z --..
+    </p>
+  <p>寫一程式，把摩斯電碼轉成摩斯電碼對應到的英文字。</p>
+  <p>
+    範例輸入：
+  </p>
+  <p>... --- ...<br>
+  -.-- --- ..-<br>
+  .- -. -..<br>
+  ..<br>
+  .... . .-.. .--.</p>
+  <textarea id= "mos" rows="10" cols="30"></textarea>
+  <input type="button" value="輸出" onclick="Ans()">
+  <p id = "ans"></p>
+</body>
+</html>
